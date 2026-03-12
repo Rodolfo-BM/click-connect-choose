@@ -75,10 +75,6 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px 0px hsl(142 70% 45% / 0.2)" },
-          "50%": { boxShadow: "0 0 25px 4px hsl(142 70% 45% / 0.35)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

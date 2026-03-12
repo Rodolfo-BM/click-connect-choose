@@ -19,7 +19,7 @@ const Index = () => {
       <div className="w-full max-w-md text-center space-y-8">
         {/* Logo */}
         <div className="flex justify-center">
-          <div className="w-24 h-24 rounded-full bg-secondary border-2 border-primary overflow-hidden">
+          <div className="w-24 h-24 rounded-full bg-accent border-2 border-border overflow-hidden">
             <img src={logo} alt="Distribuidora Esmeralda" className="w-full h-full object-cover" />
           </div>
         </div>
