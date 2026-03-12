@@ -22,9 +22,9 @@ const LinkButton = ({ label, onClick, href, icon, variant = "secondary" }: LinkB
   const Icon = iconMap[icon];
 
   const variantClasses = {
-    primary: "bg-primary text-primary-foreground hover:brightness-110",
-    secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border",
-    compact: "bg-transparent text-muted-foreground hover:text-foreground border border-border/50 hover:border-border",
+    primary: "bg-secondary text-secondary-foreground hover:brightness-105 border border-secondary",
+    secondary: "bg-secondary text-secondary-foreground hover:brightness-105 border border-secondary",
+    compact: "bg-transparent text-foreground/70 hover:text-foreground",
   };
 
   const sizeClasses = variant === "compact"
