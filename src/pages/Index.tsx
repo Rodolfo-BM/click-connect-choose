@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="w-full max-w-md text-center space-y-8">
-        {/* Avatar / Logo placeholder */}
+        {/* Avatar / Logo */}
         <div className="flex justify-center">
           <div className="w-20 h-20 rounded-full bg-secondary border-2 border-primary flex items-center justify-center text-3xl">
             💬
@@ -29,7 +29,7 @@ const Index = () => {
           <p className="text-muted-foreground">{config.subtitle}</p>
         </div>
 
-        {/* Buttons */}
+        {/* Primary + Extra Buttons */}
         <div className="space-y-3">
           <LinkButton
             label={config.whatsappButtonLabel}
@@ -47,6 +47,21 @@ const Index = () => {
             />
           ))}
         </div>
+
+        {/* Secondary Links (compact) */}
+        {config.secondaryLinks.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-2 pt-2">
+            {config.secondaryLinks.map((link, index) => (
+              <LinkButton
+                key={index}
+                label={link.label}
+                href={link.url}
+                icon={link.icon}
+                variant="compact"
+              />
+            ))}
+          </div>
+        )}
 
         {/* Footer */}
         <p className="text-xs text-muted-foreground/50 pt-4">

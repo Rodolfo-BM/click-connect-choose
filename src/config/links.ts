@@ -73,11 +73,16 @@ const config: PageConfig = {
   // 🏷️ Texto do botão
   whatsappButtonLabel: "Falar pelo WhatsApp",
 
-  // 🔗 LINKS EXTRAS (descomente e edite para adicionar)
+  // 🔗 LINKS EXTRAS DE TAMANHO COMPLETO (descomente e edite para adicionar)
   extraLinks: [
-    // { label: "Nosso Instagram", url: "https://instagram.com/seuuser", icon: "instagram" },
     // { label: "Canal no Telegram", url: "https://t.me/seucanal", icon: "telegram" },
     // { label: "Enviar E-mail", url: "mailto:contato@empresa.com", icon: "email" },
+  ],
+
+  // 🔗 LINKS SECUNDÁRIOS (menores, menos chamativos — ideal para redes sociais)
+  secondaryLinks: [
+    { label: "Instagram", url: "https://instagram.com/seuuser", icon: "instagram" },
+    { label: "TikTok", url: "https://tiktok.com/@seuuser", icon: "tiktok" },
   ],
 };
 
