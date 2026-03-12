@@ -20,7 +20,17 @@ export interface ExtraLink {
   /** URL de redirecionamento */
   url: string;
   /** Ícone do botão */
-  icon: "instagram" | "telegram" | "email" | "phone" | "link";
+  icon: "instagram" | "telegram" | "email" | "phone" | "link" | "tiktok";
+}
+
+/** Links secundários menores (redes sociais, etc.) */
+export interface SecondaryLink {
+  /** Texto que aparece no botão */
+  label: string;
+  /** URL de redirecionamento */
+  url: string;
+  /** Ícone do botão */
+  icon: "instagram" | "telegram" | "email" | "phone" | "link" | "tiktok";
 }
 
 export interface PageConfig {
@@ -34,8 +44,10 @@ export interface PageConfig {
   whatsappMessage: string;
   /** Texto do botão de WhatsApp */
   whatsappButtonLabel: string;
-  /** Links/botões extras (Instagram, Telegram, etc.) */
+  /** Links/botões extras de tamanho completo (Instagram, Telegram, etc.) */
   extraLinks: ExtraLink[];
+  /** Links secundários menores, menos chamativos (redes sociais, etc.) */
+  secondaryLinks: SecondaryLink[];
 }
 
 // =============================================
