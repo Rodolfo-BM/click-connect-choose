@@ -55,8 +55,8 @@ export interface PageConfig {
 // =============================================
 
 const config: PageConfig = {
-  title: "Fale Conosco",
-  subtitle: "Escolha o melhor canal para entrar em contato",
+  title: "Distribuidora Esmeralda",
+  subtitle: "Somos o ÚNICO FORNECEDOR que sua ótica precisa! Enviamos P/ Todo Brasil! 🇧🇷",
 
   // 📱 NÚMEROS DE WHATSAPP
   // Adicione quantos números quiser. O cliente será direcionado aleatoriamente.
