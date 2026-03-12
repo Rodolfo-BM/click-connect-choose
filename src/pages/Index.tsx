@@ -1,5 +1,6 @@
 import config from "@/config/links";
 import LinkButton from "@/components/LinkButton";
+import logo from "@/assets/logo.webp";
 
 const getRandomWhatsAppUrl = () => {
   const { whatsappNumbers, whatsappMessage } = config;
@@ -16,10 +17,10 @@ const Index = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="w-full max-w-md text-center space-y-8">
-        {/* Avatar / Logo */}
+        {/* Logo */}
         <div className="flex justify-center">
-          <div className="w-20 h-20 rounded-full bg-secondary border-2 border-primary flex items-center justify-center text-3xl">
-            💬
+          <div className="w-24 h-24 rounded-full bg-secondary border-2 border-primary overflow-hidden">
+            <img src={logo} alt="Distribuidora Esmeralda" className="w-full h-full object-cover" />
           </div>
         </div>
 
