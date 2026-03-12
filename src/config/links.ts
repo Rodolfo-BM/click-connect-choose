@@ -20,7 +20,17 @@ export interface ExtraLink {
   /** URL de redirecionamento */
   url: string;
   /** Ícone do botão */
-  icon: "instagram" | "telegram" | "email" | "phone" | "link";
+  icon: "instagram" | "telegram" | "email" | "phone" | "link" | "tiktok";
+}
+
+/** Links secundários menores (redes sociais, etc.) */
+export interface SecondaryLink {
+  /** Texto que aparece no botão */
+  label: string;
+  /** URL de redirecionamento */
+  url: string;
+  /** Ícone do botão */
+  icon: "instagram" | "telegram" | "email" | "phone" | "link" | "tiktok";
 }
 
 export interface PageConfig {
@@ -34,8 +44,10 @@ export interface PageConfig {
   whatsappMessage: string;
   /** Texto do botão de WhatsApp */
   whatsappButtonLabel: string;
-  /** Links/botões extras (Instagram, Telegram, etc.) */
+  /** Links/botões extras de tamanho completo (Instagram, Telegram, etc.) */
   extraLinks: ExtraLink[];
+  /** Links secundários menores, menos chamativos (redes sociais, etc.) */
+  secondaryLinks: SecondaryLink[];
 }
 
 // =============================================
@@ -61,11 +73,16 @@ const config: PageConfig = {
   // 🏷️ Texto do botão
   whatsappButtonLabel: "Falar pelo WhatsApp",
 
-  // 🔗 LINKS EXTRAS (descomente e edite para adicionar)
+  // 🔗 LINKS EXTRAS DE TAMANHO COMPLETO (descomente e edite para adicionar)
   extraLinks: [
-    // { label: "Nosso Instagram", url: "https://instagram.com/seuuser", icon: "instagram" },
     // { label: "Canal no Telegram", url: "https://t.me/seucanal", icon: "telegram" },
     // { label: "Enviar E-mail", url: "mailto:contato@empresa.com", icon: "email" },
+  ],
+
+  // 🔗 LINKS SECUNDÁRIOS (menores, menos chamativos — ideal para redes sociais)
+  secondaryLinks: [
+    { label: "Instagram", url: "https://instagram.com/seuuser", icon: "instagram" },
+    { label: "TikTok", url: "https://tiktok.com/@seuuser", icon: "tiktok" },
   ],
 };
 
