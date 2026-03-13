@@ -62,9 +62,17 @@ const config: PageConfig = {
   // Adicione quantos números quiser. O cliente será direcionado aleatoriamente.
   // Para desativar o aleatório, deixe apenas 1 número.
   whatsappNumbers: [
-    "5511999999999",
-    "5511888888888",
-    "5511777777777",
+    "5562984840044",
+    "5562984080079",
+    "5562982020142",
+    "5562981163175",
+    "5562983000220",
+    "5562982019452",
+    "5562982220543",
+    "5562984030162",
+    "5562981727099",
+    "5562982640039",
+    "5562981737525",
   ],
 
   // 💬 Mensagem padrão ao abrir o WhatsApp
@@ -81,8 +89,8 @@ const config: PageConfig = {
 
   // 🔗 LINKS SECUNDÁRIOS (menores, menos chamativos — ideal para redes sociais)
   secondaryLinks: [
-    { label: "Instagram", url: "https://instagram.com/seuuser", icon: "instagram" },
-    { label: "TikTok", url: "https://tiktok.com/@seuuser", icon: "tiktok" },
+    { label: "Instagram", url: "https://www.instagram.com/esmeralda.atacado", icon: "instagram" },
+    { label: "TikTok", url: "https://www.tiktok.com/@esmeraldaatacado", icon: "tiktok" },
   ],
 };
 
