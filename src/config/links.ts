@@ -76,7 +76,7 @@ const config: PageConfig = {
   ],
 
   // 💬 Mensagem padrão ao abrir o WhatsApp
-  whatsappMessage: "Olá! Gostaria de mais informações.",
+  whatsappMessage: "Olá! Quero acessar o catálogo!",
 
   // 🏷️ Texto do botão
   whatsappButtonLabel: "Falar pelo WhatsApp",
